@@ -1,0 +1,23 @@
+{
+    "name" : "csv2json",
+    "version" : "0.0.1",
+    "description" : "",
+    "author": "Patrick Desmarais <patrick.desm@gmail.com>",
+    "homepage": "http://github.com/pdes06/csv2json",
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/pdes06/csv2json.git"
+    },
+    "engine" : {
+        "node": ">=5.2.0"
+    },
+    "scripts": {
+        "start": "node ./index.js",
+        "test": "node ./test/all.js"
+    },
+    "license": "MIT",
+    "licenses": [{
+        "type": "The MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+    }]
+}
