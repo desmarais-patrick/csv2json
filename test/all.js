@@ -1,10 +1,10 @@
-var CsvRowParserTest = require("./CsvRowParserTest");
+var csvutils = require("./csvutils_test");
 
 var passed;
 
-console.log("CsvRowParserTest START");
+console.log("csvutils START");
 console.log();
-passed = CsvRowParserTest.run();
+passed = csvutils.run();
 console.log();
-console.log("CsvRowParserTest END  ", passed ? "[ALL PASSED]" : "[FAILED]");
+console.log("csvutils END  ", passed ? "[ALL PASSED]" : "[FAILED]");
 

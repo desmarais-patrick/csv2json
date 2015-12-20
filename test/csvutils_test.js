@@ -1,5 +1,5 @@
 var util = require('util');
-var CsvRowParser = require("../CsvRowParser");
+var csvutils = require("../csvutils");
 
 var isEqual = function (out, expected) {
   if (out.length !== expected.length) {
@@ -21,7 +21,7 @@ var test = function (what, input, expected) {
   var passed = false;
 
   try {
-    output = CsvRowParser.parse(input);
+    output = csvutils.parseRow(input);
     passed = isEqual(output, expected); 
   } catch (e) {
     error = e;

@@ -1,4 +1,4 @@
-var parse = function (line) {
+var parseRow = function (line) {
   if (line.indexOf('"') === -1) {
     return line.split(',');
   }
@@ -24,5 +24,5 @@ var parse = function (line) {
   return result;
 };
 
-exports.parse = parse;
+exports.parseRow = parseRow;
 
