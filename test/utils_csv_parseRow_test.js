@@ -1,5 +1,5 @@
 var util = require('util');
-var csvutils = require("../csvutils");
+var csv = require("../utils/csv");
 
 var isEqual = function (out, expected) {
   if (out.length !== expected.length) {
@@ -21,7 +21,7 @@ var test = function (what, input, expected) {
   var passed = false;
 
   try {
-    output = csvutils.parseRow(input);
+    output = csv.$parseRow(input);
     passed = isEqual(output, expected); 
   } catch (e) {
     error = e;

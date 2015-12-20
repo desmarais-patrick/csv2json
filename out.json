@@ -1,8 +1,13 @@
 [
   {
     "date": "2014-12-01",
-    "description": "SAAQ , Immatric",
-    "amount": "($25.02)"
+    "description": "Toyota Echo",
+    "amount": "$(25,000.02)"
+  },
+  {
+    "date": "2014-12-01",
+    "description": "SAAQ , Immatric, etc.",
+    "amount": "$25.02"
   },
   {
     "date": "4/3/15",
