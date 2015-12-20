@@ -44,17 +44,17 @@ function parseCsvLines(raw) {
   writeOutputFile();
 }
 
-var CsvRowParser = require('./CsvRowParser');
+var csvutils = require('./csvutils');
 
 function parseCsvHeader(line) {
-  var headerNames = CsvRowParser.parse(line);
+  var headerNames = csvutils.parseRow(line);
   headerNames.forEach(function (name) {
     template.push({name: name, val: null});
   });
 }
 
 function parseCsvRow(line) {
-  var values = CsvRowParser.parse(line);
+  var values = csvutils.parseRow(line);
   var obj = {};
   values.forEach(function (val, index) {
     var propertyName = template[index].name;
